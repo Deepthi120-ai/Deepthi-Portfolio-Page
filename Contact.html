@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <style>
+        .contact-title{
+            color:azure;
+            text-align:center;
+            font-size: 40px;
+        }
+        .links{
+            text-align: center;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            gap: 100px;
+        }
+        img{
+            height:60px;
+            width:60px;
+        }
+        .msg-title{
+            text-align:center;
+            color:azure;
+            font-size: 30px;
+        }
+        .Info1{
+            text-align: center;
+            color:azure;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            gap: 100px;
+        }
+        .total-msg{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:50px;
+        }
+        .Info2{
+            text-align:center;
+            color:azure;
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap:100px;
+        }
+
+        .email input{
+            margin-top:25px;
+        }
+
+        .msg{
+            height:60px;
+            width:200px;
+        }
+
+        .submit{
+            margin-top:60px;
+            height:40px;
+            width:80px;
+        }
+
+        .link{
+            text-decoration: none;
+            color:aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <img class="icon" src="./R.jpg">
+            <h1> Welcome to Deepthi B's Website!</h1> 
+            <ul>
+                <li><a href="/Projects">Projects</a></li>
+                <li><a href="/Profile">Profile</a></li>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p class="msg-title">Leave Me a Message:</p>
+    <form action="/addMessage" method="POST">
+    <div class="total-msg">
+        <div class="Info1">
+            <div>
+                <p>First Name:</p>
+                <input type="text" name="FName"></input>
+            </div>
+            <div>
+                <p>Last name:</p>
+                <input type="text" name="LName"></input>
+            </div>  
+        </div>
+        <div class="Info2">
+            <div class="email">
+                <p>Email:</p>
+                <input type="text" name="Email"></input>
+            </div>
+            <div>
+                <p>Message:</p>
+                <input class="msg" type="text" name="Message"></input>
+            </div>
+        </div>
+        <input class="submit" type="submit"></input>
+    </div>
+    </form>
+    <p class="contact-title">My Contact:</p>
+    <div class="links">
+        <div>
+            <p>gmail:</p>
+            <img src="./gmail.png">
+            <p class="link">deepthi.b210@gmail.com</p>
+        </div>
+        <div>
+            <p>linkedin:</p>
+            <a href="https://www.linkedin.com/in/deepthi-b-000ab1215/" target="_blank"><img src="./Li.png"></a>
+            <a class="link" href="https://www.linkedin.com/in/deepthi-b-000ab1215/" target="_blank"><p>https://www.linkedin.com/in/deepthi-b-000ab1215/</p></a>
+        </div>
+        <div>
+            <p>github:</p>
+            <a href="https://github.com/Deepthi120-ai" target="_blank"><img src="./github.png"></a>
+            <a class="link" href="https://github.com/Deepthi120-ai" target="_blank"><p>https://github.com/Deepthi120-ai</p></a>
+        </div>
+    </div>
+</body>
+<script>
+   let submit= document.getElementsByClassName("submit")[0];
+   
+</script>
+</html>

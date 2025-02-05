@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <style>
+
+
+        @media screen and (max-width:768px) { /*for mobile, max width is 768px*/
+
+            .image-left-align {
+                margin:20px;
+                display:grid;
+                grid-template-columns:400px 100px;
+                gap:50px;
+            }
+
+            .image-right-align {
+                margin:20px;
+                display:grid;
+                grid-template-columns:100px 400px;
+                gap:50px;
+            }
+
+            img{
+                width:400px;
+                height:200px;
+            }
+            .header{
+                font-weight:bold;
+                font-size:13px;
+            }
+
+            .left-container img{
+                border-right:10px solid tan;
+                padding:0 20px 0 0;/*t r b l*/
+                border-radius: 0 100px 100px 0; /*tl tr br bl*/
+            }
+            .right-container img{
+                border-left:10px solid tan ;
+                padding:0 0 0 20px;
+                border-radius: 100px 0 0 100px; /*tl tr br bl*/
+            }
+        }
+        @media screen and (max-width:1024px) and (min-width:769px) { /*for tablet, max width is 1024px*/
+
+
+            .image-left-align {
+                margin:20px;
+                display:grid;
+                grid-template-columns:700px 200px;
+                gap:50px;
+            }
+
+            .image-right-align {
+                margin:20px;
+                display:grid;
+                grid-template-columns:200px 700px;
+                gap:50px;
+            }
+
+            img{
+                width:600px;
+                height:300px;
+            }
+
+            .header{
+                font-weight:bold;
+                font-size:15px;
+            }
+
+            .left-container img{
+                border-right:10px solid tan;
+                padding:0 20px 0 0;/*t r b l*/
+                border-radius: 0 100px 100px 0; /*tl tr br bl*/
+            }
+            .right-container img{
+                border-left:10px solid tan ;
+                padding:0 0 0 20px;
+                border-radius: 100px 0 0 100px; /*tl tr br bl*/
+            }
+            
+        }
+        @media screen and (min-width:1025px) { /*for laptop, max width is 1024px*/
+
+            .image-left-align {
+                margin:20px;
+                display:grid;
+                grid-template-columns:700px 700px;
+                gap:50px;
+            }
+
+            .image-right-align {
+                margin:20px;
+                display:grid;
+                grid-template-columns:700px 700px;
+                gap:50px;
+            }
+
+            .header{
+                margin:20px;
+                font-weight:bold;
+                font-size:30px;
+                /* border:5px solid gray; */
+            }
+            .section-line{
+                border:5px solid gray;
+                margin:0 30px 0 20px;
+            }
+            img{
+                height:400px;
+                width:600px;
+            }
+
+            .left-container img{
+                margin:0 0 0 20px;
+                border-right:10px solid tan;
+                padding:0 20px 0 0;/*t r b l*/
+                border-radius: 0 100px 100px 0; /*tl tr br bl*/
+            }
+            .right-container img{
+                margin:0 20px 0 0;
+                border-left:10px solid tan ;
+                padding:0 0 0 20px;
+                border-radius: 100px 0 0 100px; /*tl tr br bl*/
+            }
+
+            .CSProject:hover .header{
+                animation-name:myanimation1;
+                animation-duration:1s;
+            }
+            /* p:nth-child(2):hover{
+                animation-name:myanimation1;
+                animation-duration:3s;
+            } */
+            .CSProjects h2{
+                text-align: center;
+                color:gray;
+                font-size:40px;
+                /* padding-left:400px; */
+            }
+
+            .content p{
+                color:snow;
+                margin:20px; 
+            }
+            @keyframes myanimation1{
+                0%{
+                    opacity:0;
+                    margin:20px;
+                }
+
+                25%{
+                    opacity:0.25;
+                    margin:15px;
+                }
+                50%{
+                    opacity:0.5;
+                    margin:10px;
+                }
+                75%{
+                    opacity:0.75;
+                    margin:15px;
+                }
+                100%{
+                    opacity:1;
+                    margin:20px;
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <img class="icon" src="./R.jpg">
+            <h1> Welcome to Deepthi B's Website!</h1> 
+            <ul>
+                <li id="Projects"><a href="/Projects">Projects</a></li>
+                <li id="Profile"><a href="/Profile">Profile</a></li>
+                <li id="Contact"><a href="/Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="CSProjects">
+        <h2>CS Projects:</h2>
+        <section class="CSProject">
+            <div class="image-left-align">
+                <div class="left-container"><img src="./location.png"></div>
+                <div>
+                    <p class="header">Location Recommender System</p>
+                    <div class="section-line"></div>
+                    <div class="content">
+                        <p class="lang">Html, CSS, Python, Node JS, JavaScript, MySQL, Express js
+<p class="desc">•User Signs In, details are sent to the backend MySQL db. User Logs In, on authentication, home page is loaded
+<br>•
+Homepage contains a MAP GUI of Bangalore, on button click, the browser gives the location. The location is then passed onto clusterFinder ML algorithm to detect Top 5 places for the lat, lng. These locations are passed onto an API module which fetches the details of the places to be displayed on the next page.
+<br>•
+Finally, the user can filter the output to get details of places recommended personally to the user based on history additional to the previous details.
+                    </p>
+                    </div>
+                </div>
+            </div>     
+        </section>
+        <section class="CSProject">
+            <div class="image-right-align">
+                <div>
+                    <p class="header">Kaleo Fan Page Website</p>
+                    <div class="section-line"></div>
+                    <div class="content">
+                        <p class="lang">Javascript, NodeJS, CSS, html,ExpressJS</p>
+                        <p class="desc">•Designed and implemented a modern styled website that has a home page which consists of tour dates, and tickets, an About page, and a store page implemented by javascript and NodeJS
+                            <br>•
+                            The Store page allows customers to add items, remove items with the bill being simultaneously updated, and able to store these objects in the backend.
+                        </p>
+                    </div>   
+                </div>
+                <div class="right-container"><img src="./kaleo.png"></div>
+            </div>
+        </section>
+        <section class="CSProject">
+            <div class="image-left-align">
+                <div class="left-container"><img src="./weather.png"></div>
+                <div>
+                    <p class="header">Weather Prediction</p>
+                    <div class="section-line"></div>
+                    <div class="content">
+                        <p class="lang">Python</p>
+                        <p class="desc">Preprocessed- cleaned and analyzed 10 yrs of Delhi weather data using various ML tools seaborn. Found Correlation between various dependent variables, analyzed on a Time spread graph of the variables to find dependencies- like that of between temperature and pressure and so on.
+                           <br> - Built hypothesis and tested, Built Time series SARIMA model using understanding of the variables to predict the next week’s weather, tested using adfuler, dfuller tests.</p>
+                </div>
+            </div>
+        </section>
+        <section class="CSProject">
+            <div class="image-right-align">
+                <div>
+                    <p class="header">Online Quiz using Flutter Android</p> 
+                <div class="section-line"></div>
+                <div class="content">
+                    <p class="lang">Flutter</p>
+                    <p class="desc">Created a Mobile App on Android Studio using Flutter, for testing students on their knowledge using practice MCQ test. It consists of Home page and a couple of MCQs of Drop Down Style, which on answered correctly adds a point and delivers the result in the RESULTs page. Used various Circle avatar Icons, Box Decoration and linear gradient of multiple hues for the buttons and so on.Use of Stack-push and pop operations- data structure for clicking the next page and returning to the previous page.
+                    </p>
+                </div>
+                </div>
+            <div class="right-container"><img src="./quiz.png"></div>
+            </div>
+        </section>
+</body>
+</html>
+
+<!--  1st I created the nav bar ->ul,li a, and styling for it to the left with display of flex
+2nd I made the images and added them alternatively-> can make it w/ js
+I used grid display to divide the the 2 cols of each section-> left and right classes
+I styled the project names (header).. then I created the divs for the images and used border radius to curve them 
+Also for each media type changed the size of images , header, li a font size-->
