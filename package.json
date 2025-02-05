@@ -3,5 +3,17 @@
     "express": "^4.21.2",
     "mongoose": "^8.9.6",
     "node": "^23.7.0"
-  }
+  },
+  "name": "portfolio-page-2",
+  "version": "1.0.0",
+  "main": "ContactModel.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev":"node --watch app.js",
+    "start":"node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
