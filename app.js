@@ -50,15 +50,15 @@ app.post('/addMessage',async(req,res)=>{
     console.log('Email=',req.body.Email);
     console.log('Messsage=',req.body.Message);
 
-    let connect=await mongooseconnect();
 
     const Cmodel = new contactModel(
     {
         Fname:req.body.FName,
         Lname:req.body.LName,
         Email:req.body.Email,
-        Message:req.body.Message
+        Message:req.body.Message,
     });
+    let connect=await mongooseconnect();
     let result=await Cmodel.save();
     console.log('result',result);
     res.sendFile(__dirname+'/Contact.html');
