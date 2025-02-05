@@ -6,7 +6,7 @@
   },
   "name": "portfolio-page-2",
   "version": "1.0.0",
-  "main": "ContactModel.js",
+  "main": "app.js",
   "devDependencies": {},
   "scripts": {
     "dev":"node --watch app.js",
