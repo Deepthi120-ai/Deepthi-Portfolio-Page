@@ -39,8 +39,8 @@
     h1{
         justify-self:center;
         align-self:center; 
-        margin-left:100px;
-        flex-grow:1;
+        margin-left:30px;
+        /* flex-grow:1; */
         /* top:37px;
         left:40px; */
         color:palegreen;
