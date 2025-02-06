@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    background-color:palegoldenrod;
+    background-color:teal;
      /* position:relative;  */
     display:flex;
     flex-direction:row;
@@ -42,13 +42,13 @@
         flex-grow:1;
         /* top:37px;
         left:40px; */
-        color:grey;
+        color:palegreen;
     }
     
 
     ul li a{
     text-decoration: none;
-    color:rgb(144, 142, 142);
+    color:snow;
     font-size:15px;
     
     }
@@ -62,7 +62,6 @@
 
     body{
         background-color:black;
-        color:rgb(224, 175, 110);
         font-style:bold;
     }
 
@@ -75,8 +74,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    background-color:palegoldenrod;
      /* position:relative;  */
+     background-color:teal;
     display:flex;
     flex-direction:row;
     align-items:space-around;
@@ -84,6 +83,7 @@
     
 
     ul{
+        background-color:teal;
         display:flex;
         flex-direction:column;
     justify-content:flex-end;
@@ -94,7 +94,7 @@
 
     ul li a{
     text-decoration: none;
-    color:rgb(144, 142, 142);
+    color:snow;
     font-size:17px;
     
     }
@@ -119,12 +119,11 @@
         flex-grow:1;
         /* top:37px;
         left:40px; */
-        color:grey;
+        color:palegreen;
     }
 
     body{
         background-color:black;
-        color:rgb(224, 175, 110);
         font-style:bold;
     }
 
@@ -138,7 +137,6 @@
 @media screen and (min-width:1025px) {
     body{
         background-color:black;
-        color:thistle;
         font-style:bold;
         /* text-decoration: underline;
         text-decoration-color: peru; */
