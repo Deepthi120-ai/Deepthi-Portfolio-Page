@@ -421,8 +421,13 @@
                 if (document.getElementById(tabId)) {
                     event.preventDefault();
                     activateTab(tabId);
-                    document.querySelector('.dashboard-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
                     closeMobileNav();
+                    window.requestAnimationFrame(() => {
+                        const targetSection = document.getElementById(tabId);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    });
                 }
             });
         });

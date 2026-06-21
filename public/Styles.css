@@ -790,7 +790,7 @@ h1 {
     }
 
     .case-card:nth-child(even) .case-copy {
-        order: 0;
+        order: 2;
     }
 
     .case-card > .case-copy {
@@ -907,7 +907,10 @@ h1 {
     }
 
     .tab-bar {
-        display: none;
+        position: static;
+        top: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .tab-content {
