@@ -13,15 +13,29 @@
     <header class="site-header">
         <nav class="nav-shell" aria-label="Main navigation">
             <a class="brand" href="/" aria-label="Deepthi B home">
-                <img class="brand-mark" src="./R.jpg" alt="Deepthi B">
+                <img class="brand-mark" src="./ooty-sitting.jpeg" alt="Deepthi B profile photo">
                 <span>
                     <strong>Deepthi B</strong>
                     <small>Full-stack developer</small>
                 </span>
             </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="nav-toggle-icon" aria-hidden="true"></span>
+                <span class="nav-toggle-label">Menu</span>
+            </button>
             <div class="nav-actions">
                 <a href="mailto:deepthi.b210@gmail.com">Email</a>
                 <a href="#experience" data-tab-link="experience">Experience</a>
+                <a href="https://github.com/Deepthi120-ai" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="nav-cta" href="#inquire" data-tab-link="inquire">Start a project</a>
+            </div>
+            <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+                <a href="mailto:deepthi.b210@gmail.com">Email</a>
+                <a href="#services" data-tab-link="services">Services</a>
+                <a href="#case-studies" data-tab-link="case-studies">Case Studies</a>
+                <a href="#experience" data-tab-link="experience">Experience</a>
+                <a href="#about-approach" data-tab-link="about-approach">Approach</a>
+                <a href="#inquire" data-tab-link="inquire">Inquire</a>
                 <a href="https://github.com/Deepthi120-ai" target="_blank" rel="noreferrer">GitHub</a>
                 <a class="nav-cta" href="#inquire" data-tab-link="inquire">Start a project</a>
             </div>
@@ -366,6 +380,24 @@
         const tabs = document.querySelectorAll('.tab-btn');
         const contents = document.querySelectorAll('.tab-content');
         const tabLinks = document.querySelectorAll('[data-tab-link]');
+        const navShell = document.querySelector('.nav-shell');
+        const navToggle = document.querySelector('.nav-toggle');
+
+        function closeMobileNav() {
+            if (!navShell || !navToggle) {
+                return;
+            }
+
+            navShell.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        if (navToggle && navShell) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navShell.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
 
         function activateTab(tabId) {
             tabs.forEach(tab => {
@@ -390,6 +422,7 @@
                     event.preventDefault();
                     activateTab(tabId);
                     document.querySelector('.dashboard-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    closeMobileNav();
                 }
             });
         });

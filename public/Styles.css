@@ -105,6 +105,33 @@ a {
     gap: 10px;
 }
 
+.nav-toggle {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    min-height: 40px;
+    padding: 0 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-main);
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.nav-toggle-icon {
+    width: 16px;
+    height: 2px;
+    border-radius: 999px;
+    background: currentColor;
+    box-shadow: 0 -5px 0 currentColor, 0 5px 0 currentColor;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .nav-actions a,
 .primary-action,
 .secondary-action,
@@ -766,6 +793,16 @@ h1 {
         order: 0;
     }
 
+    .case-card > .case-copy {
+        order: 2;
+    }
+
+    .case-card > .storefront-preview,
+    .case-card > .phone-frame,
+    .case-card > .preview-frame {
+        order: 1;
+    }
+
     .storefront-layout {
         grid-template-columns: 1fr;
     }
@@ -786,19 +823,56 @@ h1 {
         width: min(100% - 24px, 1180px);
         min-height: auto;
         padding: 12px 0;
-        align-items: flex-start;
-        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
     }
 
     .nav-actions {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: none;
     }
 
-    .nav-actions a {
-        padding: 0 8px;
-        font-size: 0.8rem;
+    .mobile-menu {
+        width: 100%;
+        order: 4;
+        display: none;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 12px;
+        padding: 14px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        background: rgba(11, 15, 25, 0.96);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+    }
+
+    .nav-shell.is-open .mobile-menu {
+        display: grid;
+    }
+
+    .mobile-menu a,
+    .mobile-menu button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 12px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text-soft);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .mobile-menu .nav-cta {
+        border-color: rgba(56, 189, 248, 0.42);
+        background: linear-gradient(135deg, #38bdf8, #34d399);
+        color: #06111f;
     }
 
     main {
@@ -833,8 +907,7 @@ h1 {
     }
 
     .tab-bar {
-        top: 121px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: none;
     }
 
     .tab-content {
