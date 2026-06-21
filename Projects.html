@@ -3,279 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Deepthi B | Software Solutions Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles.css">
-    <style>
-
-
-        @media screen and (max-width:768px) { /*for mobile, max width is 768px*/
-
-            .image-left-align {
-                margin:20px;
-                display:grid;
-                grid-template-columns:250px 200px;
-                gap:0px;
-            }
-
-            .image-right-align {
-                margin:20px;
-                display:grid;
-                grid-template-columns:200px 250px;
-                gap:0px;
-            }
-
-            img{
-                width:200px;
-                height:200px;
-            }
-            .header{
-                font-weight:bold;
-                font-size:18px;
-                color:thistle;
-            }
-
-            .left-container img{
-                border-right:10px solid tan;
-                padding:0 20px 0 0;/*t r b l*/
-                border-radius: 0 100px 100px 0; /*tl tr br bl*/
-            }
-            .right-container img{
-                border-left:10px solid tan ;
-                padding:0 0 0 20px;
-                border-radius: 100px 0 0 100px; /*tl tr br bl*/
-            }
-
-            .section-line{
-                border:5px solid gray;
-                margin:0 30px 0 20px;
-            }
-
-            .content p{
-                color:snow;
-                margin:20px; 
-            }
-        }
-        @media screen and (max-width:1024px) and (min-width:769px) { /*for tablet, max width is 1024px*/
-
-
-            .image-left-align {
-                margin:20px;
-                display:grid;
-                grid-template-columns:700px 200px;
-                gap:50px;
-            }
-
-            .image-right-align {
-                margin:20px;
-                display:grid;
-                grid-template-columns:200px 700px;
-                gap:50px;
-            }
-
-            img{
-                width:600px;
-                height:300px;
-            }
-
-            .header{
-                font-weight:bold;
-                font-size:20px;
-                color:thistle;
-            }
-
-            .left-container img{
-                border-right:10px solid tan;
-                padding:0 20px 0 0;/*t r b l*/
-                border-radius: 0 100px 100px 0; /*tl tr br bl*/
-            }
-            .right-container img{
-                border-left:10px solid tan ;
-                padding:0 0 0 20px;
-                border-radius: 100px 0 0 100px; /*tl tr br bl*/
-            }
-
-            .section-line{
-                border:5px solid gray;
-                margin:0 30px 0 20px;
-            }
-
-            .content p{
-                color:snow;
-                margin:20px; 
-            }
-            
-        }
-        @media screen and (min-width:1025px) { /*for laptop, max width is 1024px*/
-
-            .image-left-align {
-                margin:20px;
-                display:grid;
-                grid-template-columns:700px 700px;
-                gap:50px;
-            }
-
-            .image-right-align {
-                margin:20px;
-                display:grid;
-                grid-template-columns:700px 700px;
-                gap:50px;
-            }
-
-            .header{
-                margin:20px;
-                font-weight:bold;
-                font-size:30px;
-                color:thistle;
-                /* border:5px solid gray; */
-            }
-            .section-line{
-                border:5px solid gray;
-                margin:0 30px 0 20px;
-            }
-            img{
-                height:400px;
-                width:600px;
-            }
-
-            .left-container img{
-                margin:0 0 0 20px;
-                border-right:10px solid tan;
-                padding:0 20px 0 0;/*t r b l*/
-                border-radius: 0 100px 100px 0; /*tl tr br bl*/
-            }
-            .right-container img{
-                margin:0 20px 0 0;
-                border-left:10px solid tan ;
-                padding:0 0 0 20px;
-                border-radius: 100px 0 0 100px; /*tl tr br bl*/
-            }
-
-            .CSProject:hover .header{
-                animation-name:myanimation1;
-                animation-duration:1s;
-            }
-            /* p:nth-child(2):hover{
-                animation-name:myanimation1;
-                animation-duration:3s;
-            } */
-            .CSProjects h2{
-                text-align: center;
-                color:gray;
-                font-size:40px;
-                /* padding-left:400px; */
-            }
-
-            .content p{
-                color:snow;
-                margin:20px; 
-            }
-            @keyframes myanimation1{
-                0%{
-                    opacity:0;
-                    margin:20px;
-                }
-
-                25%{
-                    opacity:0.25;
-                    margin:15px;
-                }
-                50%{
-                    opacity:0.5;
-                    margin:10px;
-                }
-                75%{
-                    opacity:0.75;
-                    margin:15px;
-                }
-                100%{
-                    opacity:1;
-                    margin:20px;
-                }
-            }
-        }
-
-    </style>
 </head>
 <body>
-    <nav>
-        <div class="navigation">
-            <img class="icon" src="./R.jpg">
-            <h1> Welcome to Deepthi B's Website!</h1> 
-            <ul>
-                <li id="Projects"><a href="/Projects">Projects</a></li>
-                <li id="Profile"><a href="/Profile">Profile</a></li>
-                <li id="Contact"><a href="/Contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section class="CSProjects">
-        <h2>CS Projects:</h2>
-        <section class="CSProject">
-            <div class="image-left-align">
-                <div class="left-container"><img src="./location.png"></div>
-                <div>
-                    <p class="header">Location Recommender System</p>
-                    <div class="section-line"></div>
-                    <div class="content">
-                        <p class="lang">Html, CSS, Python, Node JS, JavaScript, MySQL, Express js
-<p class="desc">•User Signs In, details are sent to the backend MySQL db. User Logs In, on authentication, home page is loaded
-<br>•
-Homepage contains a MAP GUI of Bangalore, on button click, the browser gives the location. The location is then passed onto clusterFinder ML algorithm to detect Top 5 places for the lat, lng. These locations are passed onto an API module which fetches the details of the places to be displayed on the next page.
-<br>•
-Finally, the user can filter the output to get details of places recommended personally to the user based on history additional to the previous details.
-                    </p>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="/" aria-label="Deepthi B home">
+                <img class="brand-mark" src="./R.jpg" alt="Deepthi B">
+                <span>
+                    <strong>Deepthi B</strong>
+                    <small>Full-stack developer</small>
+                </span>
+            </a>
+            <div class="nav-actions">
+                <a href="mailto:deepthi.b210@gmail.com">Email</a>
+                <a href="#experience" data-tab-link="experience">Experience</a>
+                <a href="https://github.com/Deepthi120-ai" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="nav-cta" href="#inquire" data-tab-link="inquire">Start a project</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Independent engineering for focused product teams</p>
+                <h1>Production-grade software solutions built from idea to deployment.</h1>
+                <p class="hero-text">
+                    I design, build, and deploy responsive web applications, mobile systems, and analytics workflows with clear architecture, fast runtime behavior, and reliable data flow.
+                </p>
+                <div class="hero-actions">
+                    <button class="primary-action" type="button" data-tab-link="services">Explore services</button>
+                    <button class="secondary-action" type="button" data-tab-link="case-studies">View case studies</button>
+                    <button class="secondary-action" type="button" data-tab-link="experience">Experience</button>
+                </div>
+            </div>
+
+            <aside class="command-panel" aria-label="Delivery snapshot">
+                <div class="panel-toolbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="metric-grid">
+                    <div>
+                        <strong>3</strong>
+                        <span>Core build tracks</span>
+                    </div>
+                    <div>
+                        <strong>7+</strong>
+                        <span>Delivery technologies</span>
+                    </div>
+                    <div>
+                        <strong>MVP</strong>
+                        <span>Launch-ready focus</span>
+                    </div>
+                    <div>
+                        <strong>Oracle</strong>
+                        <span>Current engineering role</span>
                     </div>
                 </div>
-            </div>     
+                <div class="pipeline">
+                    <div>
+                        <span>Discovery</span>
+                        <b></b>
+                    </div>
+                    <div>
+                        <span>Architecture</span>
+                        <b></b>
+                    </div>
+                    <div>
+                        <span>Build</span>
+                        <b></b>
+                    </div>
+                    <div>
+                        <span>Deploy</span>
+                        <b></b>
+                    </div>
+                </div>
+            </aside>
         </section>
-        <section class="CSProject">
-            <div class="image-right-align">
-                <div>
-                    <p class="header">Kaleo Fan Page Website</p>
-                    <div class="section-line"></div>
-                    <div class="content">
-                        <p class="lang">Javascript, NodeJS, CSS, html,ExpressJS</p>
-                        <p class="desc">•Designed and implemented a modern styled website that has a home page which consists of tour dates, and tickets, an About page, and a store page implemented by javascript and NodeJS
-                            <br>•
-                            The Store page allows customers to add items, remove items with the bill being simultaneously updated, and able to store these objects in the backend.
+
+        <section class="dashboard-shell" aria-label="Portfolio dashboard">
+            <div class="tab-bar" role="tablist" aria-label="Dashboard sections">
+                <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="services">Services</button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="case-studies">Case Studies</button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="experience">Experience</button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="about-approach">Approach</button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="inquire">Inquire</button>
+            </div>
+
+            <section class="tab-content active" id="services" role="tabpanel">
+                <div class="section-heading">
+                    <p class="eyebrow">Services</p>
+                    <h2>Production-Grade Software Solutions</h2>
+                    <p>End-to-end application delivery for founders, teams, and businesses that need practical engineering without unnecessary ceremony.</p>
+                </div>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <span class="card-index">01</span>
+                        <h3>Full-Stack Web Applications</h3>
+                        <p>Building responsive, secure web solutions with optimized backend routing, real-time sync, and relational databases.</p>
+                        <div class="pill-row">
+                            <span>React JS</span>
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>FastAPI</span>
+                            <span>MySQL</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="card-index">02</span>
+                        <h3>Cross-Platform Mobile Architectures</h3>
+                        <p>Creating native-performing mobile applications from a single codebase optimized for smooth animations, offline persistence, and clear UI flows.</p>
+                        <div class="pill-row">
+                            <span>Flutter</span>
+                            <span>Ionic</span>
+                            <span>Android</span>
+                            <span>UI Systems</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="card-index">03</span>
+                        <h3>Data Analytics & ML Systems</h3>
+                        <p>Engineering custom predictive modeling pipelines and recommendation logic to surface user-centric data patterns.</p>
+                        <div class="pill-row">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Forecasting</span>
+                            <span>Data Prep</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tab-content" id="case-studies" role="tabpanel">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Case studies with measurable product logic.</h2>
+                    <p>Each project pairs user-facing experience with backend structure, data movement, or decision logic.</p>
+                </div>
+
+                <div class="case-stack">
+                    <article class="case-card ecommerce-case">
+                        <div class="case-copy">
+                            <span class="case-label">E-commerce storefront</span>
+                            <h3>Appscrip E-Commerce Storefront</h3>
+                            <p><strong>Problem:</strong> The storefront needed a clean product discovery flow with category filters, sorting, wishlist states, and responsive product cards.</p>
+                            <p><strong>Solution:</strong> Built a storefront experience that mirrors a retail catalog: top navigation, product filtering, recommended sorting, item count, and a multi-column product grid tuned for desktop and smaller screens.</p>
+                            <div class="pill-row">
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>Express JS</span>
+                                <span>CSS Grid</span>
+                            </div>
+                            <a class="case-link" href="https://appscrip-task-deepthi-b.onrender.com/" target="_blank" rel="noreferrer">Open live storefront</a>
+                        </div>
+                        <div class="storefront-preview" aria-label="Appscrip storefront screenshots">
+                            <img class="storefront-shot main-shot" src="./wished.png" alt="Appscrip storefront product grid with wishlist state">
+                            <img class="storefront-shot detail-shot" src="./filtered.png" alt="Appscrip storefront filtered product results">
+                        </div>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-copy">
+                            <span class="case-label">Mobile application</span>
+                            <h3>Independent Flutter Mobile Architecture</h3>
+                            <p><strong>Problem:</strong> Mobile users needed a clean learning and assessment flow without confusing navigation.</p>
+                            <p><strong>Solution:</strong> Built a native-performing Flutter application with custom component states, structured question flows, result handling, and reliable screen transitions.</p>
+                            <div class="pill-row">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>State Management</span>
+                                <span>UI/UX Componentry</span>
+                            </div>
+                        </div>
+                        <div class="phone-frame">
+                            <img src="./quiz.png" alt="Mobile application preview">
+                        </div>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-copy">
+                            <span class="case-label">Recommendation system</span>
+                            <h3>Full-Stack Location Recommendation Platform</h3>
+                            <p><strong>Problem:</strong> Users needed fast, relevant place suggestions based on location and behavior.</p>
+                            <p><strong>Solution:</strong> Built authenticated flows, mapped browser geolocation into a cluster-finder model, and returned personalized place recommendations through backend API orchestration.</p>
+                            <div class="pill-row">
+                                <span>Python</span>
+                                <span>Node.js</span>
+                                <span>MySQL</span>
+                                <span>API Routing</span>
+                            </div>
+                        </div>
+                        <div class="preview-frame">
+                            <img src="./location.png" alt="Location recommendation platform preview">
+                        </div>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-copy">
+                            <span class="case-label">Predictive analytics</span>
+                            <h3>Intelligent Weather Forecasting Pipeline</h3>
+                            <p><strong>Problem:</strong> Historical weather data needed cleaning, correlation analysis, and a testable forecasting model.</p>
+                            <p><strong>Solution:</strong> Processed ten years of Delhi weather data, analyzed dependencies, and built a SARIMA time-series workflow for weekly prediction.</p>
+                            <div class="pill-row">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>SARIMA Analytics</span>
+                                <span>Time Series</span>
+                            </div>
+                        </div>
+                        <div class="preview-frame">
+                            <img src="./weather.png" alt="Weather forecasting system preview">
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tab-content" id="experience" role="tabpanel">
+                <div class="section-heading">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Professional engineering timeline.</h2>
+                    <p>Recent roles across enterprise tooling, full-stack delivery, deployment support, and business-aligned software architecture.</p>
+                </div>
+
+                <div class="experience-timeline" data-cms-list="experience">
+                    <article class="experience-card">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <p class="experience-date">March 2026 - Present</p>
+                            <h3>Advanced Services Engineer</h3>
+                            <strong>Oracle</strong>
+                            <p>Developing full-stack internal tooling utilizing Python, FastAPI, React, and TypeScript. Integrating cloud SDK modules and managing containerized system deployments.</p>
+                            <div class="pill-row">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Cloud SDKs</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <p class="experience-date">June 2025 - March 2026</p>
+                            <h3>Full Stack Developer (ASET)</h3>
+                            <strong>Baryons Software Solutions</strong>
+                            <p>Engineered modular frontend and backend components, automated unit testing pipelines, and refined user experience architectures across concurrent mobile and web software systems.</p>
+                            <div class="pill-row">
+                                <span>Frontend</span>
+                                <span>Backend</span>
+                                <span>Unit Testing</span>
+                                <span>Mobile Systems</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <p class="experience-date">July 2023 - August 2024</p>
+                            <h3>Associate Consultant</h3>
+                            <strong>Nextrove IT Solutions</strong>
+                            <p>Focused on corporate enterprise software deployment, systems configuration, and technical business solutions architecture.</p>
+                            <div class="pill-row">
+                                <span>Enterprise Software</span>
+                                <span>Deployment</span>
+                                <span>Configuration</span>
+                                <span>Consulting</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tab-content" id="about-approach" role="tabpanel">
+                <div class="approach-grid">
+                    <div class="section-heading compact">
+                        <p class="eyebrow">Approach</p>
+                        <h2>Solution-led architecture, designed around real requirements.</h2>
+                        <p>
+                            I start by understanding the outcome a client needs, then design the architecture, interface flow, and implementation plan around that requirement. My focus is building practical software solutions that are clear to use, reliable to maintain, and refined through feedback until the product feels aligned with the people using it.
                         </p>
-                    </div>   
+                    </div>
+                    <div class="principle-list">
+                        <article>
+                            <span>01</span>
+                            <h3>Requirement-first planning</h3>
+                            <p>I translate business needs into clear user flows, data structures, and delivery priorities before writing the build around them.</p>
+                        </article>
+                        <article>
+                            <span>02</span>
+                            <h3>Quality through iteration</h3>
+                            <p>I refine layouts, API behavior, edge cases, and performance details based on what the product needs to do well in practice.</p>
+                        </article>
+                        <article>
+                            <span>03</span>
+                            <h3>Client satisfaction as a constraint</h3>
+                            <p>The goal is not only working code, but a solution that feels dependable, understandable, and useful to the client after handoff.</p>
+                        </article>
+                    </div>
                 </div>
-                <div class="right-container"><img src="./kaleo.png"></div>
-            </div>
+            </section>
+
+            <section class="tab-content" id="inquire" role="tabpanel">
+                <div class="inquiry-layout">
+                    <div class="section-heading compact">
+                        <p class="eyebrow">Project inquiry</p>
+                        <h2>Let's Kickstart Your Project</h2>
+                        <p>Looking for an MVP build, an architecture scale-up, or cross-platform application execution? Send over your requirements below.</p>
+                        <p class="cms-note">Submissions save to Strapi when <code>STRAPI_URL</code> is configured on the server.</p>
+                        <div class="contact-links" aria-label="External links">
+                            <a href="mailto:deepthi.b210@gmail.com">deepthi.b210@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/deepthi-b-000ab1215/" target="_blank" rel="noreferrer">LinkedIn</a>
+                            <a href="https://github.com/Deepthi120-ai" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                    </div>
+
+                    <form class="inquiry-form" action="/addMessage" method="POST">
+                        <label>
+                            <span>Full Name</span>
+                            <input type="text" name="FName" autocomplete="name" required>
+                        </label>
+                        <label>
+                            <span>Email Address</span>
+                            <input type="email" name="Email" autocomplete="email" required>
+                        </label>
+                        <label>
+                            <span>Project Category</span>
+                            <select name="ProjectCategory" required>
+                                <option value="">Select one</option>
+                                <option>Web App Build</option>
+                                <option>Mobile Development</option>
+                                <option>System Architecture</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Project Brief</span>
+                            <textarea name="Message" rows="6" placeholder="Describe what you want to build..." required></textarea>
+                        </label>
+                        <input type="hidden" name="LName" value="">
+                        <button class="primary-action form-submit" type="submit">Send requirements</button>
+                    </form>
+                </div>
+            </section>
         </section>
-        <section class="CSProject">
-            <div class="image-left-align">
-                <div class="left-container"><img src="./weather.png"></div>
-                <div>
-                    <p class="header">Weather Prediction</p>
-                    <div class="section-line"></div>
-                    <div class="content">
-                        <p class="lang">Python</p>
-                        <p class="desc">Preprocessed- cleaned and analyzed 10 yrs of Delhi weather data using various ML tools seaborn. Found Correlation between various dependent variables, analyzed on a Time spread graph of the variables to find dependencies- like that of between temperature and pressure and so on.
-                           <br> - Built hypothesis and tested, Built Time series SARIMA model using understanding of the variables to predict the next week’s weather, tested using adfuler, dfuller tests.</p>
-                </div>
-            </div>
-        </section>
-        <section class="CSProject">
-            <div class="image-right-align">
-                <div>
-                    <p class="header">Online Quiz using Flutter Android</p> 
-                <div class="section-line"></div>
-                <div class="content">
-                    <p class="lang">Flutter</p>
-                    <p class="desc">Created a Mobile App on Android Studio using Flutter, for testing students on their knowledge using practice MCQ test. It consists of Home page and a couple of MCQs of Drop Down Style, which on answered correctly adds a point and delivers the result in the RESULTs page. Used various Circle avatar Icons, Box Decoration and linear gradient of multiple hues for the buttons and so on.Use of Stack-push and pop operations- data structure for clicking the next page and returning to the previous page.
-                    </p>
-                </div>
-                </div>
-            <div class="right-container"><img src="./quiz.png"></div>
-            </div>
-        </section>
+    </main>
+
+    <script src="./cms-config.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+        const tabLinks = document.querySelectorAll('[data-tab-link]');
+
+        function activateTab(tabId) {
+            tabs.forEach(tab => {
+                const isActive = tab.dataset.tab === tabId;
+                tab.classList.toggle('active', isActive);
+                tab.setAttribute('aria-selected', String(isActive));
+            });
+
+            contents.forEach(content => {
+                content.classList.toggle('active', content.id === tabId);
+            });
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+        });
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                const tabId = link.dataset.tabLink;
+                if (document.getElementById(tabId)) {
+                    event.preventDefault();
+                    activateTab(tabId);
+                    document.querySelector('.dashboard-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        if (window.location.hash) {
+            const hashTab = window.location.hash.replace('#', '');
+            if (document.getElementById(hashTab)) {
+                activateTab(hashTab);
+            }
+        }
+
+        const createPills = (items = []) => items.map(item => `<span>${item}</span>`).join('');
+
+        function renderExperience(items = []) {
+            const timeline = document.querySelector('[data-cms-list="experience"]');
+            if (!timeline || !items.length) {
+                return;
+            }
+
+            timeline.innerHTML = items.map(item => `
+                <article class="experience-card">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <p class="experience-date">${item.period || ''}</p>
+                        <h3>${item.title || ''}</h3>
+                        <strong>${item.company || ''}</strong>
+                        <p>${item.summary || ''}</p>
+                        <div class="pill-row">${createPills(item.tags || [])}</div>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        async function fetchCMSData() {
+            const config = window.PORTFOLIO_CMS || {};
+            if (!config.baseUrl) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`${config.baseUrl.replace(/\/$/, '')}${config.portfolioEndpoint || '/api/portfolio-page?populate=deep'}`);
+                if (!response.ok) {
+                    throw new Error(`CMS responded with ${response.status}`);
+                }
+
+                const payload = await response.json();
+                const pageData = payload.data?.attributes || payload.data || payload;
+
+                if (pageData.experience) {
+                    renderExperience(pageData.experience);
+                }
+            } catch (error) {
+                console.warn('Portfolio CMS data unavailable. Using local fallback content.', error);
+            }
+        }
+
+        fetchCMSData();
+    </script>
 </body>
 </html>
-
-<!--  1st I created the nav bar ->ul,li a, and styling for it to the left with display of flex
-2nd I made the images and added them alternatively-> can make it w/ js
-I used grid display to divide the the 2 cols of each section-> left and right classes
-I styled the project names (header).. then I created the divs for the images and used border radius to curve them 
-Also for each media type changed the size of images , header, li a font size-->

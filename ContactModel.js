@@ -8,6 +8,8 @@ const ContactSchema = new mongoose.Schema({
         Lname:String,
 
         Email:String,
+
+        ProjectCategory:String,
            
         Message:String,
 })
@@ -15,4 +17,4 @@ const ContactSchema = new mongoose.Schema({
 
 let contactModel = mongoose.model("ContactData", ContactSchema);
 
-module.exports= contactModel;
+module.exports = contactModel;
